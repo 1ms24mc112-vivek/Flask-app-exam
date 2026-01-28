@@ -2,7 +2,7 @@ pipeline {
     agent any
 
     environment {
-        IMAGE_NAME = "<dockerhub_username>/flask-app"
+        IMAGE_NAME = "viveknshet112/flask-app-k8s-exam"
     }
 
     stages {
@@ -10,7 +10,7 @@ pipeline {
         stage('Checkout Code') {
             steps {
                 git branch: 'main',
-                    url: '<github_repo_url>'
+                    url: ''
             }
         }
 
