@@ -1,10 +1,10 @@
 from flask import Flask
-app=Flask()
 
-@app.route('/')
+app = Flask(__name__)
+
+@app.route("/")
 def home():
-	return "flask application is running successfully"
+    return "Flask Manual CI/CD with Kubernetes vivek"
 
-if __name__ = "__main__":
-	return('host=0.0.0.0',port=5000)
-
+if __name__ == "__main__":
+    app.run(host="0.0.0.0", port=5000)
