@@ -10,7 +10,7 @@ pipeline {
         stage('Checkout Code') {
             steps {
                 git branch: 'main',
-                    url: ''
+                    url: 'https://github.com/1ms24mc112-vivek/Flask-app-exam.git'
             }
         }
 
