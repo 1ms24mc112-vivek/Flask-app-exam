@@ -1,5 +1,8 @@
 pipeline {
     agent any
+    triggers{
+        CRON('* * * * *')
+    }
 
     environment {
         IMAGE_NAME = "viveknshet112/flask-app-k8s-exam"
