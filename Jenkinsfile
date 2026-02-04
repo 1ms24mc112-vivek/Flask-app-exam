@@ -1,11 +1,8 @@
 pipeline {
     agent any
-    triggers{
-        cron('* * * * *')
-    }
 
     environment {
-        IMAGE_NAME = "viveknshet112/flask-app-k8s-exam"
+        IMAGE_NAME = "viveknshet112/flask_dockerswarm112"
     }
 
     stages {
